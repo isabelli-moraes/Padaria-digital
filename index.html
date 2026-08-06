@@ -1,48 +1,236 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Padaria Digital</title>
-        <style>
-          header {
-              background-color: #F6F080;
-              color:#000000 ;
-              text-align: center;
-              max-height: 800px;
-              margin: 0 auto;
-              padding: 16px;
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria Doce Sabor</title>
 
-          }  
-            main{
-              background-color: #000000;
-              color:#F6F080;
-              max-height: 800px;
-              margin: 0 auto;
-              padding: 16px;
+    <style>
 
-          }
-          img{
-            width: 80px;
-            height: 80px;
-          }
-          </style>
-    </head>
-    <body>
-        <header>
-            
-            <h1>Padaria- Doce Sabor.</h1>
-            <h3>Sabores maravilhosos para todos os gostos. 🥮🧁🍰</h3>
-        </header>
-        <main>
-            <img src="padaria imagem.png" alt=""Logotipo redondo de uma padaria digital com fundo bege. À esquerda, uma padeira sorridente vestindo chapéu de chef e avental branco segura uma bandeja com um pão caseiro dourado e quentinho. Ao fundo, uma charmosa barraca de padaria com toldo listrado em azul e branco, exibindo um pequeno bolo e um tablet que mostra um ícone de carrinho de compras."">
-            <h2>Meu primeiro post</h2>
-            <P>Por: Isabelli Moraes </P>
-            <p>Bem-vindo a nossa Padaria! 🥐✨ 
-                É um prazer ter você por aqui. Aqui, cada pão é feito com carinho, ingredientes selecionados e aquele toque caseiro que lembra momentos especiais. Sinta o aroma fresco saindo do forno e descubra sabores que aquecem o coração.
-                Fique à vontade para explorar nosso site, conhecer nossas delícias e fazer parte da nossa mesa. Estamos felizes em adoçar o seu dia! 🍞😊
-            </main>
-          </p>
-    </body>
- </html>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#fdf8ef;
+        }
+
+        header{
+            background:#F6F080;
+            color:#000;
+            text-align:center;
+            padding:25px;
+        }
+
+        nav{
+            background:#333;
+            text-align:center;
+            padding:12px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:20px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:#F6F080;
+        }
+
+        main{
+            max-width:1100px;
+            margin:auto;
+            padding:30px;
+        }
+
+        .banner{
+            text-align:center;
+            margin-bottom:40px;
+        }
+
+        .banner img{
+            width:220px;
+            border-radius:15px;
+            margin-bottom:15px;
+        }
+
+        .banner p{
+            margin-top:15px;
+            line-height:1.6;
+            font-size:18px;
+        }
+
+        h2{
+            text-align:center;
+            margin-bottom:30px;
+        }
+
+        .produtos{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            background:white;
+            width:250px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,.2);
+            text-align:center;
+            padding:15px;
+        }
+
+        .card img{
+            width:180px;
+            height:180px;
+            object-fit:cover;
+            border-radius:10px;
+        }
+
+        .card h3{
+            margin:15px 0;
+        }
+
+        .preco{
+            color:#c96b00;
+            font-size:22px;
+            font-weight:bold;
+            margin:10px;
+        }
+
+        button{
+            background:#F6F080;
+            border:none;
+            padding:12px 20px;
+            border-radius:8px;
+            cursor:pointer;
+            font-weight:bold;
+        }
+
+        button:hover{
+            background:#e8dc40;
+        }
+
+        footer{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>🥖 Padaria Doce Sabor</h1>
+
+    <h3>Sabores maravilhosos para todos os gostos. 🥮🧁🍰</h3>
+
+</header>
+
+<nav>
+
+    <a href="#">Início</a>
+    <a href="#">Produtos</a>
+    <a href="#">Promoções</a>
+    <a href="#">Contato</a>
+
+</nav>
+
+<main>
+
+<section class="banner">
+
+    <img src="padaria imagem.png"
+    alt="Logotipo da Padaria Doce Sabor">
+
+    <h2>Bem-vindo à nossa Padaria!</h2>
+
+    <p>
+        É um prazer ter você por aqui.
+        Cada pão é preparado com carinho,
+        ingredientes selecionados e aquele toque caseiro
+        que lembra momentos especiais.
+        Explore nosso catálogo e aproveite nossas delícias
+        fresquinhas todos os dias!
+    </p>
+
+</section>
+
+<h2>Nossos Produtos</h2>
+
+<section class="produtos">
+
+    <div class="card">
+
+        <img src="pao.jpg" alt="Pão Francês">
+
+        <h3>Pão Francês</h3>
+
+        <p>Crocante por fora e macio por dentro.</p>
+
+        <div class="preco">R$ 1,00</div>
+
+        <button>Comprar</button>
+
+    </div>
+
+    <div class="card">
+
+        <img src="bolo.jpg" alt="Bolo de Chocolate">
+
+        <h3>Bolo de Chocolate</h3>
+
+        <p>Feito com chocolate 100% cacau.</p>
+
+        <div class="preco">R$ 35,00</div>
+
+        <button>Comprar</button>
+
+    </div>
+
+    <div class="card">
+
+        <img src="croissant.jpg" alt="Croissant">
+
+        <h3>Croissant</h3>
+
+        <p>Massa amanteigada e recheios variados.</p>
+
+        <div class="preco">R$ 8,50</div>
+
+        <button>Comprar</button>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+
+    <p><strong>Padaria Doce Sabor</strong></p>
+
+    <p>📍 Rua das Flores, 123</p>
+
+    <p>📞 (41) 99999-9999</p>
+
+    <p>📧 docesabor@email.com</p>
+
+    <p>&copy; 2026 - Todos os direitos reservados.</p>
+
+</footer>
+
+</body>
+</html>
